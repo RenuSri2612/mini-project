@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+    <title>feedback form</title>
+   
+    <style>
+      label{
+        text-transform: capitalize;
+
+      }
+      legend{
+        text-transform: uppercase;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        font-size: 20px;
+        font-family: fantasy;
+      }
+      h2{
+        text-align: center;
+        border-bottom: 1px solid grey;
+        font-family:'Times New Roman', Times, serif;
+        letter-spacing: 3px;
+      }
+      body{
+        margin: 70px;
+        margin-right:70px;
+        background-color:rgb(246, 243, 243);
+        
+      }
+      form{
+        background-color:rgb(247, 239, 228);
+        line-height: 30px;
+        font-size: 18px;
+      }
+      q{
+        font-size:15px;
+        font-family: Arial, Helvetica, sans-serif;
+        opacity:0.4;  
+      }
+      pre{
+        line-height:20px;
+      }
+      button{
+        color:blue;
+        background-color: aliceblue;
+      }
+      a{
+        border:1px solid black;
+        
+      }
+      p{
+        text-align: center;
+      }
+    </style>
+    
+  
+</head>
+<body>
+<h2>FEEDBACK FORM</h2>
+
+<form >
+<fieldset>
+<legend>personal details</legend>
+<ol type="i">
+<li><label>*First Name/Surname:</label><br></li>
+<input type="text" id="fname" placeholder="Enter your surname"><br>
+<li><label>*Middle Name:</label><br></li>
+<input type="text" id="mname" placeholder="Enter your name"><br>
+<li><label>Last Name:</label><br></li>
+<input type="text" id="lname" placeholder="(optional)"><br>
+<li><label>*Roll no:</label><br></li>
+<input type="text" id="roll no"><br>
+<li><label>*clg email:</label><br></li>
+<input type="text" placeholder="@pace.ac.in"><br>
+<li><label>gender:</label><br></li>
+<input type="radio" name="gender">male</input>
+<input type="radio" name="gender">female</input>
+<input type="radio" name="gender">other</input><br>
+<li><label>*Age:</label><br></li>
+<select>
+  <option selected disabled>select</option>
+  <option>below 18</option>
+  <option>18-21</option>
+  <option>above 21</option>
+</select><br>
+<li><label>*section:</label><br></li>
+<select>
+ <option selected disabled>select</option>
+ <option>IT</option>
+ <option>CSE(iot&csbt)</option>
+ <option>ECE C</option>
+</select>
+<li><label>*mobile</label></li>
+<select>
+  <option>+91</option>
+</select>
+<input type="number" ></input>
+</fieldset>
+</ol>
+<fieldset>
+  <legend>feedback questions</legend>
+  <p><q><u>choose the option at your will</u></q></p>
+    <ol>
+      <li>What is the main theme of this internship?</li>
+      <textarea></textarea>
+      <li>How the internship helps in your present semister?</li>
+      <input type="radio" name="a">very well</input><br>
+      <input type="radio" name="a">good</input><br>
+      <input type="radio" name="a">average</input><br>
+      <input type="radio" name="a">below average</input><br>
+      <input type="radio" name="a">not much</input><br>
+      <li>What did you learn ? </li>
+      <textarea></textarea>
+      <li>Is the internship helpful for industrial exposure?</li>
+      <input type="radio" name="b">yes</input>
+      <input type="radio" name="b">no</input>
+      <li>How do you describe this internship experiance to others?</li>
+      <input type="radio" name="c">very good</input><br>
+      <input type="radio" name="c">good</input><br>
+      <input type="radio" name="c">above average</input><br>
+      <input type="radio" name="c">average</input><br>
+      <input type="radio" name="c">below average</input><br>
+      <li>How do you feel about your training and mentoring?</li>
+      <input type="radio" name="d">very much satisfied</input><br>
+      <input type="radio" name="d">satisfied</input><br>
+      <input type="radio" name="d">good</input><br>
+      <input type="radio" name="d">average</input><br>
+      <input type="radio" name="d">not satisfied</input><br>
+      <li>Tell us about new skills/techniques you gained</li>
+      <input type="text">
+      <li>Would you recommend this internship to other students?</li> 
+      <input type="radio" name="e">yes</input>
+      <input type="radio" name="e">no</input>
+      <li>How many hours did you spent on working for this internship?</li>
+      <select>
+        <option>select</option>
+        <option>1 hour a day</option>
+        <option>2-3 hours</option>
+        <option>above 3 hours</option>
+      </select>
+      <li>Did you work on any special project during internship?</li>
+      <input type="radio" name="f">yes</input>
+      <input type="radio" name="f">no</input>
+      <li>What is the main use of your mini project?</li>
+      <input type="checkbox">To improve communication<br>
+      <input type="checkbox">To promote personal growth<br>
+      <input type="checkbox">to provide positive criticism<br>
+      <input type="checkbox">to analyse the situation<br>
+      <input type="checkbox">to give clear examples<br>
+      <input type="checkbox">to offer support<br>
+      <input type="checkbox">to ask opinion on the situation<br>
+      <li>On a scale of 1 to 5 how much did you enjoy the internship process?</li> 
+      <input type="radio" name="g" >star</input>
+      <input type="radio" name="g" >2 star</input>
+      <input type="radio" name="g" >3 star</input>
+      <input type="radio" name="g" >4 star</input>
+      <input type="radio" name="g" >5 star</input>
+      <li>Are there any suggestions you would like to give?</li>
+      <label>suggestions:<br>
+        <textarea></textarea></label>
+    </ol>
+    <p><a href="C:\pace\html\project\o.html" target="_blank" onclick="a()">submit</a></p>
+    <script>
+      function a() {
+        confirm("Do you want to submit");
+      }
+    </script>
+    
+</fieldset>
+</form>
+</body>
+</html>
